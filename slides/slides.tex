@@ -1,0 +1,45 @@
+\documentclass{beamer}
+%\usepackage{minted}
+%\usepackage{epigraph}
+\usepackage{subfig}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{tikz}
+\usepackage{color, colortbl}
+\usepackage{amsmath}
+\usepackage{tabularray}
+\usepackage[
+    n,
+    operators,
+    advantage,
+    sets,
+    adversary,
+    landau,
+    probability,
+    notions,    
+    logic,
+    ff,
+    mm,
+    primitives,
+    events,
+    complexity,
+    asymptotics,
+    keys]{cryptocode}
+\usepackage{bm}
+\usetheme{focus}
+
+\title{RUSTico}
+\subtitle{Rust in cryptographic outlook}
+\author{Davide Carnemolla}
+\titlegraphic{\includegraphics[scale=0.12]{images/ferris.png}}
+\institute{Università degli Studi di Catania}
+\date{2024}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \include{introduction}
+    
+\end{document}
