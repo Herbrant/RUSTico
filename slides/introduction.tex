@@ -78,7 +78,7 @@
              Garbage collector & No & No & No \\
              \hline
             \end{tabular}
-            \end{center}
+        \end{center}
     \end{frame}
     
 
@@ -99,7 +99,7 @@
     \begin{frame}[containsverbatim]{Getting started}
         \small
         \begin{block}{Installing on MacOS/Unix}
-            \tt{curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh}
+            \tt{\$ curl -sSf https://sh.rustup.rs | sh}
         \end{block}
 
         \begin{block}{Installing on Windows}
@@ -107,6 +107,57 @@
         \end{block}
 
         \begin{alertblock}{Verifying the installation}
-            \tt{rustc --version}
+            \tt{\$ rustc $--$version}
+            \tt{rustc 1.70.0 (90c541806 2023-05-31)}
         \end{alertblock}
+    \end{frame}
+
+    \begin{frame}[fragile]{Hello Rust}
+        \begin{code}
+            fn main() {
+                println!("Hello Rust");
+            }
+        \end{code}
+
+        \begin{alertblock}{Compiling and running}
+            \tt{\$ rustc <file-name.rs>} \\
+            \tt{\$ ./file-name}
+        \end{alertblock}
+    \end{frame}
+
+    \begin{frame}{Hello, Cargo!}
+        \begin{columns}[t, onlytextwidth]
+            \column{0.5\textwidth}
+                \centering
+                \includegraphics[height=1.5cm, keepaspectratio]{images/folder.pdf}
+
+                \textbf{Project Manager}
+
+            \column{0.5\textwidth}
+                \centering
+                \includegraphics[height=1.5cm, keepaspectratio]{images/file-code.pdf}
+
+                \textbf{Dependencies Manager}
+        \end{columns}
+
+        \vspace{1cm}
+
+        \begin{columns}[t, onlytextwidth]
+            \column{0.33\textwidth}
+                \centering
+                \includegraphics[height=1.5cm, keepaspectratio]{images/hammer.pdf}
+
+                \textbf{Building}
+
+            \column{0.33\textwidth}
+                \centering
+                \includegraphics[height=1.5cm, keepaspectratio]{images/square-check.pdf}
+
+                \textbf{Testing}
+            \column{0.33\textwidth}
+                \centering
+                \includegraphics[height=1.5cm, keepaspectratio]{images/gauge.pdf}
+
+                \textbf{Benchmarking}
+        \end{columns}
     \end{frame}

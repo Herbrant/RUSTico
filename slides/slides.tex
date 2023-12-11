@@ -115,6 +115,14 @@
         \fi%
     \end{tikzpicture}
 }
+\usepackage{listings, listings-rust}
+\lstnewenvironment{code}[1][]{%
+  \lstset{%
+    language=Rust,
+    style=colouredRust,
+    #1,
+  }%
+}{}
 \usetheme{focus}
 
 \title{RUSTico}
