@@ -107,7 +107,8 @@
         \end{block}
 
         \begin{alertblock}{Verifying the installation}
-            \tt{\$ rustc $--$version}
+            \tt{\$ rustc -{}-version}
+            
             \tt{rustc 1.70.0 (90c541806 2023-05-31)}
         \end{alertblock}
     \end{frame}
@@ -123,6 +124,22 @@
             \tt{\$ rustc <file-name.rs>} \\
             \tt{\$ ./file-name}
         \end{alertblock}
+    \end{frame}
+
+    \begin{frame}{Useful extensions for vscode}
+        \begin{columns}[t, onlytextwidth]
+            \column{0.5\textwidth}
+                \centering
+                \includegraphics[height=2cm, keepaspectratio]{images/rust-analyzer.jpeg}
+
+                \textbf{rust-analyzer}
+
+            \column{0.5\textwidth}
+                \centering
+                \includegraphics[height=2cm, keepaspectratio]{images/code-lldb.jpeg}
+
+                \textbf{CodeLLDB}
+        \end{columns}
     \end{frame}
 
     \begin{frame}{Hello, Cargo!}
@@ -160,4 +177,18 @@
 
                 \textbf{Benchmarking}
         \end{columns}
+    \end{frame}
+
+    \begin{frame}{Cargo: a new project}
+        \begin{block}{Create a new application with cargo}
+            \tt{\$ cargo new <project-name>}
+        \end{block}
+
+        \begin{block}{Create a new library with cargo}
+            \tt{\$ cargo new -{}-lib <project-name>}
+        \end{block}
+
+        \begin{alertblock}{Do you need help?}
+            \tt{cargo -{}-help}
+        \end{alertblock}
     \end{frame}
