@@ -120,9 +120,15 @@
   \lstset{%
     language=Rust,
     style=colouredRust,
+    xleftmargin=.1\textwidth, 
+    xrightmargin=.1\textwidth,
+    basicstyle=\small,
     #1,
   }%
 }{}
+
+\usepackage{colortbl}
+
 \usetheme{focus}
 
 \title{RUSTico}
@@ -138,5 +144,6 @@
     \end{frame}
 
     \include{introduction}
-    
+    \include{common-programming-concepts}
+    \include{ownership}
 \end{document}
